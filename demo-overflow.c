@@ -7,7 +7,8 @@ int main() {
      * per le variabili dichiarate e l'interpretazione dei valori ad esse assegnate
      * (il valore interpretato come intero varia a seconda del tipo di variabile dichiarata)
      */
-    int values[] = {1, 255, 256, 32767, 32768, 65535, 65536};
+    const int DIM = 8;
+    int values[] = {1, 32766, 32767, 32768, 32769, 65534, 65535, 65536};
 
     char c;
     unsigned char uc;
@@ -17,7 +18,7 @@ int main() {
     unsigned short usi;
 
     int idx;
-    for (idx=0; idx<7; idx++) {
+    for (idx=0; idx<DIM; idx++) {
         c = values[idx];
         uc = values[idx];
         i = values[idx];
