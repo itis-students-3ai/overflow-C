@@ -3,6 +3,10 @@
 
 
 int main() {
+    /* Questo programma visualizza l'occupazione dei vari tipi di dato 
+     * per le variabili dichiarate e l'interpretazione dei valori ad esse assegnate
+     * (il valore interpretato come intero varia a seconda del tipo di variabile dichiarata)
+     */
     int values[] = {1, 255, 256, 32767, 32768, 65535, 65536};
 
     char c;
